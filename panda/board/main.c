@@ -300,7 +300,7 @@ int usb_cb_control_msg(USB_Setup_TypeDef *setup, uint8_t *resp, bool hardwired) 
       break;
     // **** 0xb0: set IR power
     case 0xb0:
-      current_board->set_ir_power(setup->b.wValue.w);
+      
       break;
     // **** 0xb1: set fan power
     case 0xb1:
