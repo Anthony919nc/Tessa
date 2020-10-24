@@ -68,8 +68,8 @@ class opParams:
                         'curvature_factor': Param(1.2, VT.number, 'Multiplier for the curvature slowdown. Increase for less braking.'),
                         'cloak': Param(True, bool, "make comma believe you are on their fork"),
                         'corolla_tss2_d_tuning': Param(False, bool, 'lateral tuning using PID w/ true derivative'),
-                        'default_brake_distance': Param(250.0, VT.number, 'Distance in m to start braking for mapped speeds.'),
-                        'dynamic_follow': Param('normal', str, "Can be: ('close', 'normal', 'far'): Left to right increases in following distance.\n"
+                        'default_brake_distance': Param(100.0, VT.number, 'Distance in m to start braking for mapped speeds.'),
+                        'dynamic_follow': Param('close', str, "Can be: ('close', 'normal', 'far'): Left to right increases in following distance.\n"
                                                                "All profiles support dynamic follow so you'll get your preferred distance while\n"
                                                                "retaining the smoothness and safety of dynamic follow!", live=True),
                         'eco_mode': Param(False, bool, "Default to eco instead of normal."),
