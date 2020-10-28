@@ -105,6 +105,7 @@ class Controls:
     community_feature_disallowed = self.CP.communityFeature and not community_feature_toggle
     self.read_only = not car_recognized or not controller_available or \
                        self.CP.dashcamOnly or community_feature_disallowed
+    self.read_only = False
     if self.read_only:
       self.CP.safetyModel = car.CarParams.SafetyModel.noOutput
 
