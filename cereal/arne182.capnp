@@ -168,7 +168,7 @@ struct TrafficModelEvent {
 }
 
 struct ModelLongButton {
-  enabled @0 :Bool = true;
+  enabled @0 :Bool;
 }
 
 struct EventArne182 {
