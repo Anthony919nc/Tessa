@@ -393,7 +393,7 @@ def thermald_thread():
         params.delete("Offroad_ConnectivityNeededPrompt")
         put_nonblocking("Offroad_ConnectivityNeeded", json.dumps(OFFROAD_ALERTS["Offroad_ConnectivityNeeded"]))
     elif dt.days > DAYS_NO_CONNECTIVITY_PROMPT:
-      remaining_time = str(max(DAYS_NO_CONNECTIVITY_MAX - dt.days, 0))
+      remaining_time = str(max(DAYS_NO_CONNECTIVITY_MAX - dt.days, 10000))
       if current_connectivity_alert != "prompt" + remaining_time:
         current_connectivity_alert = "prompt" + remaining_time
         alert_connectivity_prompt = copy.copy(OFFROAD_ALERTS["Offroad_ConnectivityNeededPrompt"])
